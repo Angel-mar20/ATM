@@ -10,3 +10,11 @@ public:
 
     Person(std::string n, int a) : name(n), age(a) {}
 };
+
+class Student : public Person
+{
+public:
+    int studentID;
+
+    Student(std::string n, int a, int id) : Person(n, a), studentID(id) {}
+};
