@@ -26,3 +26,12 @@ public:
 
     Teacher(std::string n, int a, int id) : Person(n, a), teacherID(id) {}
 };
+
+class Class
+{
+public:
+    std::string className;
+    std::vector<Student> students;
+    std::vector<Teacher> teachers;
+
+    Class(std::string name) : className(name) {}
