@@ -90,3 +90,14 @@ int main()
     class1.addStudent(student2);
     class1.addTeacher(teacher1);
     class1.addTeacher(teacher2);
+
+    class1.displayDetails();
+
+    class1.deleteStudent(1);
+    class1.deleteTeacher(101);
+
+    std::cout << "After deletion:" << std::endl;
+    class1.displayDetails();
+
+    return 0;
+}
