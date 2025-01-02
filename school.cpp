@@ -40,3 +40,8 @@ public:
     {
         students.push_back(student);
     }
+
+    void addTeacher(const Teacher &teacher)
+    {
+        teachers.push_back(teacher);
+    }
