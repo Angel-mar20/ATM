@@ -45,3 +45,18 @@ public:
     {
         teachers.push_back(teacher);
     }
+
+    void displayDetails()
+    {
+        std::cout << "Class: " << className << std::endl;
+        std::cout << "Students: " << std::endl;
+        for (const auto &student : students)
+        {
+            std::cout << "Name: " << student.name << ", Age: " << student.age << ", ID: " << student.studentID << std::endl;
+        }
+        std::cout << "Teachers: " << std::endl;
+        for (const auto &teacher : teachers)
+        {
+            std::cout << "Name: " << teacher.name << ", Age: " << teacher.age << ", ID: " << teacher.teacherID << std::endl;
+        }
+    }
