@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <bits/algorithmfwd.h>
 
 class Person
 {
@@ -67,3 +68,11 @@ public:
                                       { return s.studentID == id; }),
                        students.end());
     }
+
+    void deleteTeacher(int id)
+    {
+        teachers.erase(std::remove_if(teachers.begin(), teachers.end(), [id](Teacher &t)
+                                      { return t.teacherID == id; }),
+                       teachers.end());
+    }
+};
