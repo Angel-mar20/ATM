@@ -28,3 +28,14 @@ public:
             std::cout << "Withdrawal successful. New balance: $" << balance << std::endl;
         }
     }
+
+    void checkBalance()
+    {
+        std::cout << "Current balance: $" << balance << std::endl;
+    }
+
+    bool validatePin(std::string inputPin)
+    {
+        return pin == inputPin;
+    }
+};
