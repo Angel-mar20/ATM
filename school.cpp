@@ -35,3 +35,8 @@ public:
     std::vector<Teacher> teachers;
 
     Class(std::string name) : className(name) {}
+
+    void addStudent(const Student &student)
+    {
+        students.push_back(student);
+    }
