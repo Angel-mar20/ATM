@@ -49,3 +49,9 @@ int main()
 
     std::cout << "Enter your PIN: ";
     std::cin >> inputPin;
+    
+    if (!atm.validatePin(inputPin))
+    {
+        std::cout << "Invalid PIN." << std::endl;
+        return 0;
+    }
