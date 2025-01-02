@@ -39,3 +39,10 @@ public:
         return pin == inputPin;
     }
 };
+
+int main()
+{
+    ATM atm("1234", 1000.0);
+    std::string inputPin;
+    int choice;
+    double amount;
