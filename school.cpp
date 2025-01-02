@@ -76,3 +76,12 @@ public:
                        teachers.end());
     }
 };
+
+int main()
+{
+    Class class1("Mathematics");
+
+    Student student1("Alice", 20, 1);
+    Student student2("Bob", 21, 2);
+    Teacher teacher1("Mr. Smith", 40, 101);
+    Teacher teacher2("Ms. Johnson", 35, 102);
