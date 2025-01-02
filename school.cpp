@@ -60,3 +60,10 @@ public:
             std::cout << "Name: " << teacher.name << ", Age: " << teacher.age << ", ID: " << teacher.teacherID << std::endl;
         }
     }
+
+    void deleteStudent(int id)
+    {
+        students.erase(std::remove_if(students.begin(), students.end(), [id](Student &s)
+                                      { return s.studentID == id; }),
+                       students.end());
+    }
