@@ -85,3 +85,8 @@ int main()
     Student student2("Bob", 21, 2);
     Teacher teacher1("Mr. Smith", 40, 101);
     Teacher teacher2("Ms. Johnson", 35, 102);
+
+    class1.addStudent(student1);
+    class1.addStudent(student2);
+    class1.addTeacher(teacher1);
+    class1.addTeacher(teacher2);
