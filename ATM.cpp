@@ -61,5 +61,28 @@ int main()
         std::cout << "\n1. Withdraw\n2. Check Balance\n3. Change PIN\n4. Exit\nChoose an option: ";
         std::cin >> choice;
 
-       
+        switch (choice)
+        {
+        case 1:
+            std::cout << "Enter amount to withdraw: ";
+            std::cin >> amount;
+            atm.withdraw(amount);
+            break;
+        case 2:
+            atm.checkBalance();
+            break;
+        case 3:
+        {
+            std::string newPin;
+            std::cout << "Enter new PIN: ";
+            std::cin >> newPin;
+            atm.changePin(newPin);
+            break;
+        }
+        case 4:
+            std::cout << "Exiting..." << std::endl;
+            break;
+        default:
+            std::cout << "Invalid choice. Please try again." << std::endl;
+        }
     } while (choice != 4);
