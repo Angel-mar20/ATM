@@ -46,3 +46,6 @@ int main()
     std::string inputPin;
     int choice;
     double amount;
+
+    std::cout << "Enter your PIN: ";
+    std::cin >> inputPin;
